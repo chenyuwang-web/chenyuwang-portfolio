@@ -16,7 +16,7 @@
   --font-serif: 'Noto Serif TC', 'Georgia', serif;
   --font-sans: 'Noto Sans TC', 'Inter', -apple-system, sans-serif;
   --font-en: 'Inter', -apple-system, sans-serif;
-  --max-w: 1080px;
+  --max-w: 1160px;
   --ease: cubic-bezier(0.25, 0, 0.1, 1);
 }
 
@@ -177,16 +177,16 @@ img { max-width: 100%; display: block; }
 
 .portrait-wrapper {
   position: relative;
-  width: 380px;
-  height: 380px;
+  width: 440px;
+  height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero-photo {
-  width: 300px;
-  height: 300px;
+  width: 360px;
+  height: 360px;
   object-fit: cover;
   object-position: center top;
   border-radius: 50%;
