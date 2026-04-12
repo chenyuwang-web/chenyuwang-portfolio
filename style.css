@@ -156,6 +156,26 @@ img { max-width: 100%; display: block; }
   margin-bottom: 48px;
 }
 
+/* Hero Portrait */
+.hero-portrait {
+  margin-bottom: 48px;
+}
+
+.hero-photo {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  transition: filter 0.6s var(--ease);
+  margin: 0 auto;
+}
+
+.hero-photo:hover {
+  filter: grayscale(0%);
+}
+
 .hero-label {
   font-family: var(--font-en);
   font-size: 0.7rem;
@@ -480,6 +500,47 @@ img { max-width: 100%; display: block; }
   width: 4px;
   height: 1px;
   background: var(--faint);
+}
+
+/* Experience Images */
+.exp-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.exp-figure {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.exp-figure img {
+  max-height: 180px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(30%);
+  transition: filter 0.4s var(--ease), transform 0.4s var(--ease);
+}
+
+.exp-figure:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.03);
+}
+
+.exp-figure figcaption {
+  margin-top: 12px;
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--light);
+  text-align: center;
 }
 
 .exp-tags {
