@@ -761,7 +761,7 @@ img { max-width: 100%; display: block; }
 
 .edu-item {
   display: grid;
-  grid-template-columns: 160px 48px 1fr;
+  grid-template-columns: 160px 56px 1fr;
   gap: 24px;
   padding: 32px 0;
   border-bottom: 1px solid var(--border);
@@ -769,17 +769,17 @@ img { max-width: 100%; display: block; }
 }
 
 .edu-logo {
-  width: 48px;
-  height: 48px;
+  width: 56px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-shrink: 0;
+  padding-top: 2px;
 }
 
 .edu-logo img {
-  max-width: 48px;
-  max-height: 48px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
 }
 
